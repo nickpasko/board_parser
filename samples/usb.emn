@@ -1,0 +1,128 @@
+.HEADER
+BOARD_FILE 3.0 "Xpedition xPCB Layout" 2019/01/23.15:55:57 1
+"MultiProtocolUSB.pcb" MM
+.END_HEADER
+.BOARD_OUTLINE UNOWNED
+1.574800
+0 0.0000000           0.0000000           0.0000000           
+0 9.5000000           0.0000000           0.0000000           
+0 9.5000000           12.0000000          0.0000000           
+0 10.3000000          12.9000000          0.0000000           
+0 12.9000000          12.9000000          0.0000000           
+0 12.9000000          31.5000000          0.0000000           
+0 -3.4000000          31.5000000          0.0000000           
+0 -3.4000000          12.9000000          0.0000000           
+0 -0.8000000          12.9000000          0.0000000           
+0 0.0000000           12.0000000          0.0000000           
+0 0.0000000           0.0000000           0.0000000           
+.END_BOARD_OUTLINE
+.ROUTE_OUTLINE UNOWNED
+ALL
+0 0.3000000           0.3000000           0.0000000           
+0 9.2000000           0.3000000           0.0000000           
+0 9.2000000           12.1000000          0.0000000           
+0 10.2000000          13.2000000          0.0000000           
+0 12.6000000          13.2000000          0.0000000           
+0 12.6000000          31.2000000          0.0000000           
+0 -3.1000000          31.2000000          0.0000000           
+0 -3.1000000          13.2000000          0.0000000           
+0 -0.7000000          13.2000000          0.0000000           
+0 0.3000000           12.1000000          0.0000000           
+0 0.3000000           0.3000000           0.0000000           
+.END_ROUTE_OUTLINE
+.PLACEMENT
+"SMD_Test_Point_1mm" "SMD_Test_Point_1mm" "TP11"
+3.0800000            30.2200000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"SMD_Test_Point_1mm" "SMD_Test_Point_1mm" "TP12"
+1.6100000            30.2200000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"SMD_Test_Point_1mm" "SMD_Test_Point_1mm" "TP13"
+-0.3200000           28.5000000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"SOT95P280X145-5N" "TPS73633DBVT" "DA1"
+2.0900000            11.0700000           0.0000000            -270.0000000         BOTTOM               PLACED    
+"ACTE_SF4000-868-07-SX" "SF4000-868-07-SX" "DA2"
+7.5900000            29.1000000           0.0000000            0.0000000            TOP                  PLACED    
+"ANT_0-AN01-3013-01-1" "0-AN01-3013-01-1" "WA1"
+10.7600000           30.3000000           0.0000000            0.0000000            TOP                  PLACED    
+"SILABS_MGM13S" "MGM13S02F512GA" "DD1"
+0.9700000            21.5300000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"QFN50P800X800X120-56N" "ZM5101" "DD2"
+5.5600000            23.5300000           0.0000000            180.0000000          TOP                  PLACED    
+"QFN50P400X400X80-25N" "CP2105-F01-GM" "DD3"
+8.1000000            22.7281140           0.0000000            0.0000000            BOTTOM               PLACED    
+"SOIC127P600X175-8N" "AT25PE20-SSHN" "DD4"
+6.0000000            15.7700000           0.0000000            0.0000000            TOP                  PLACED    
+"TI_TPD2E001DZD" "TPD2E001DZD" "VD1"
+7.1000000            13.4500000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"CAPC1005X55N" "GJM1551C1H110FB01D" "C1"
+11.2400000           28.4700000           0.0000000            180.0000000          TOP                  PLACED    
+"INDC1005X55N" "BLM15AG601SN1D" "L1"
+12.0000000           26.6000000           0.0000000            90.0000000           TOP                  PLACED    
+"RESC1005X40N" "CRCW0402100KJKTD" "R1"
+5.1900000            30.4000000           0.0000000            0.0000000            TOP                  PLACED    
+"INDC1005X55N" "LQW15AN7N5G00D" "L2"
+9.2200000            28.9300000           0.0000000            270.0000000          TOP                  PLACED    
+"RESC1005X40N" "CRCW0402100KJKTD" "R2"
+1.9000000            16.5000000           0.0000000            90.0000000           TOP                  PLACED    
+"LEDC1608X40N" "LT Q39G-Q1S2-25-1" "HL1"
+2.5000000            29.9000000           0.0000000            0.0000000            TOP                  PLACED    
+"CAPC1005X55N" "GRM155B31E104KA87D" "C3"
+10.4600000           19.7600000           0.0000000            0.0000000            BOTTOM               PLACED    
+"LEDC1608X40N" "LB Q39G-L2N2-35-1" "HL2"
+-1.0000000           29.9000000           0.0000000            0.0000000            TOP                  PLACED    
+"RESC1005X40N" "CRCW0402100KJKTD" "R3"
+-2.4700000           26.1600000           0.0000000            -270.0000000         BOTTOM               PLACED    
+"CAPC1005X55N" "GRM155B31E104KA87D" "C4"
+4.4700000            9.4500000            0.0000000            -270.0000000         BOTTOM               PLACED    
+"RESC1005X40N" "CRCW04024K70JKTD" "R4"
+7.6100000            18.6800000           0.0000000            0.0000000            BOTTOM               PLACED    
+"CAPC1005X55N" "GRM155B31E104KA87D" "C5"
+10.3000000           17.2000000           0.0000000            90.0000000           TOP                  PLACED    
+"RESC1005X40N" "CRCW040247K0JKTD" "R5"
+8.4300000            16.7300000           0.0000000            0.0000000            BOTTOM               PLACED    
+"CAPC1005X55N" "GRM155B31E104KA87D" "C6"
+10.5300000           24.2000000           0.0000000            270.0000000          TOP                  PLACED    
+"RESC1005X40N" "CRCW040224K0JKTD" "R6"
+8.4300000            15.6300000           0.0000000            0.0000000            BOTTOM               PLACED    
+"CAPC1005X55N" "GRM155B31E104KA87D" "C7"
+10.5300000           21.0200000           0.0000000            90.0000000           TOP                  PLACED    
+"CAPC1005X55N" "GRM155B31C105KA12D" "C10"
+2.5700000            13.6900000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"CAPC1005X55N" "GRM155B31C105KA12D" "C11"
+11.4400000           24.2000000           0.0000000            270.0000000          TOP                  PLACED    
+"CAPC1005X55N" "GRM155B31C105KA12D" "C12"
+11.4100000           21.0200000           0.0000000            90.0000000           TOP                  PLACED    
+"SMD_Test_Point_1mm" "SMD_Test_Point_1mm" "TP1"
+12.0149580           27.1634340           0.0000000            -180.0000000         BOTTOM               PLACED    
+"CAPC1005X55N" "GRM155B11E103KA01D" "C13"
+-0.3000000           13.6300000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"SMD_Test_Point_1mm" "SMD_Test_Point_1mm" "TP2"
+12.0100000           25.7800000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"RESC1005X40N" "CRCW0402330RJKTD" "R7"
+-1.2800000           28.5000000           0.0000000            0.0000000            TOP                  PLACED    
+"USB2_0_A" "USB2_0_TYPE_A_PLUG" "XP1"
+4.7500000            4.0200000            0.0000000            180.0000000          TOP                  PLACED    
+"CAPC1005X70N" "GRM155R61A475MEAAD" "C14"
+4.9500000            23.3500000           0.0000000            -90.0000000          BOTTOM               PLACED    
+"SMD_Test_Point_1mm" "SMD_Test_Point_1mm" "TP3"
+7.2500000            27.5000000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"SMD_Test_Point_1mm" "SMD_Test_Point_1mm" "TP4"
+8.5700000            27.5000000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"SMD_Test_Point_1mm" "SMD_Test_Point_1mm" "TP5"
+5.0000000            30.2200000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"SMD_Test_Point_1mm" "SMD_Test_Point_1mm" "TP6"
+4.3300000            27.4000000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"CAPC1005X55N" "GRM155B31E104KA87D" "C8"
+7.7800000            10.9500000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"SMD_Test_Point_1mm" "SMD_Test_Point_1mm" "TP7"
+-1.9700000           30.2200000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"SMD_Test_Point_1mm" "SMD_Test_Point_1mm" "TP8"
+-0.3300000           30.2200000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"SMD_Test_Point_1mm" "SMD_Test_Point_1mm" "TP9"
+-1.5800000           28.5000000           0.0000000            -180.0000000         BOTTOM               PLACED    
+"RESC1005X40N" "CRCW0402330RJKTD" "R8"
+1.2800000            28.5000000           0.0000000            180.0000000          TOP                  PLACED    
+"CAPC1005X55N" "GRM155B31C105KA12D" "C9"
+10.4600000           18.8800000           0.0000000            0.0000000            BOTTOM               PLACED    
+"SMD_Test_Point_1mm" "SMD_Test_Point_1mm" "TP10"
+1.2600000            28.5000000           0.0000000            -180.0000000         BOTTOM               PLACED    
+.END_PLACEMENT
