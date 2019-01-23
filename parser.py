@@ -58,7 +58,7 @@ def read_board(lines, components):
         placement.append(board.Placement(package_name.replace('\"', ''), part_number.replace('\"', ''), ref_defs.replace('\"', ''),
                                          x, y, mounting_offset, rotation_angle_deg, side_of_board, placement_status))
         i += 2
-    return board.Board(board_name, units, board_outline, drilled_holes, placement, components)
+    return board.Board(board_name.replace('\"', ''), units, board_outline, drilled_holes, placement, components)
 
 
 def print_instruction():
