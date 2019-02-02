@@ -1,0 +1,15 @@
+****
+** does not work as session is lost between the curl calls
+**
+** use Postman instead:
+** https://www.getpostman.com/collections/bd8442b7a3dc6515d122
+**
+*****
+
+curl -i -X GET http://127.0.0.1:5000/board/init
+
+curl -i -X POST -F "file=@samples/lib.emn" http://127.0.0.1:5000/board/9dae67af-7a75-4811-80a9-41f8f2603831/upload/board
+
+curl -i -X POST http://127.0.0.1:5000/board/ea408d1d-bd30-403b-9008-1fa84a907e1b/upload/components -F 'samples/lib.emp'
+
+curl -i -X GET http://127.0.0.1:5000/board/ea408d1d-bd30-403b-9008-1fa84a907e1b/parse
