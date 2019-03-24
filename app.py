@@ -8,7 +8,7 @@ from flask_restful import Api
 from werkzeug.utils import secure_filename
 from werkzeug.exceptions import BadRequest
 
-from parser import read_components, read_board
+from parser import read_geometries, read_board
 
 app = Flask(__name__)
 api = Api(app)
@@ -89,8 +89,8 @@ def parse_board(board_id):
     board_file = storage_path+session[board_id][0]
     board_lines = [line.rstrip('\n') for line in open(board_file)]
 
-    components = read_components(components_lines)
-    component_board = read_board(board_lines, components)
+    component_geometries = read_geometries(components_lines)
+    component_board = read_board(board_lines, component_geometries)
     return component_board.to_json()
 
 

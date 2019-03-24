@@ -1,30 +1,30 @@
 import board
 
 
-def read_components(lines):
-    components = []
-    components_start = 0
+def read_geometries(lines):
+    component_geometries = []
+    geometries_start = 0
     for i in range(0, len(lines) - 1):
         if i < len(lines) and lines[i] == 'END_HEADER':
-            components_start = i + 1
+            geometries_start = i + 1
             break
 
-    for i in range(components_start, len(lines) - 1):
+    for i in range(geometries_start, len(lines) - 1):
         if i < len(lines) and lines[i] == '.ELECTRICAL':
             i += 1
-            geometry_name, part_number, units, height = lines[i].split()
+            package_name, part_number, units, height = lines[i].split()
             points = []
             i += 1
             while lines[i] != '.END_ELECTRICAL':
                 loop_label, x, y, include_angle_deg = lines[i].split()
                 points.append(board.Point(loop_label, x, y, include_angle_deg))
                 i += 1
-            components.append(board.Component(geometry_name.replace('\"', ''), part_number.replace('\"', ''), units, height, points))
+            component_geometries.append(board.ComponentGeometry(package_name.replace('\"', ''), part_number.replace('\"', ''), units, height, points))
 
-    return components
+    return component_geometries
 
 
-def read_board(lines, components):
+def read_board(lines, component_geometries):
     i = 0
     while i < len(lines) and lines[i] != '.END_HEADER':
         i += 1
@@ -50,11 +50,11 @@ def read_board(lines, components):
         drilled_holes.append(board.DrilledHole(diameter, x, y, plating_style, associated_part, hole_type, hole_owner))
         i += 1
     i += 2
-    placement = []
+    components = []
     while i < len(lines) and lines[i] != ".END_PLACEMENT":
         package_name, part_number, ref_defs = lines[i].split()
         x, y, mounting_offset, rotation_angle_deg, side_of_board, placement_status = lines[i + 1].split()
-        placement.append(board.Placement(package_name.replace('\"', ''), part_number.replace('\"', ''), ref_defs.replace('\"', ''),
+        components.append(board.Component(package_name.replace('\"', ''), part_number.replace('\"', ''), ref_defs.replace('\"', ''),
                                          x, y, mounting_offset, rotation_angle_deg, side_of_board, placement_status))
         i += 2
-    return board.Board(board_name.replace('\"', ''), units, board_outline, drilled_holes, placement, components)
+    return board.Board(board_name.replace('\"', ''), units, board_outline, drilled_holes, components, component_geometries)

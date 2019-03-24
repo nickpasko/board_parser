@@ -2,13 +2,13 @@ import json
 
 
 class Board:
-    def __init__(self, board_name, units, board_outline, drilled_holes, placement, components):
+    def __init__(self, board_name, units, board_outline, drilled_holes, components, component_geometries):
         self.board_name = board_name
         self.units = units
         self.board_outline = board_outline
         self.drilled_holes = drilled_holes
-        self.placement = placement
         self.components = components
+        self.component_geometries = component_geometries
 
     def to_json(self):
         return json.dumps(self, default=lambda o: o.__dict__,
@@ -41,7 +41,7 @@ class DrilledHole:
                           sort_keys=True, indent=4)
 
 
-class Placement:
+class Component:
     def __init__(self, package_name, part_number, ref_defs, x, y, mounting_offset, rotation_angle_deg, side_of_board,
                  placement_status):
         self.package_name = package_name
@@ -59,9 +59,9 @@ class Placement:
                           sort_keys=True, indent=4)
 
 
-class Component:
-    def __init__(self, geometry_name, part_number, units, height, points):
-        self.geometry_name = geometry_name
+class ComponentGeometry:
+    def __init__(self, package_name, part_number, units, height, points):
+        self.package_name = package_name
         self.part_number = part_number
         self.units = units
         self.height = height

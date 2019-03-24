@@ -1,6 +1,6 @@
 import sys
 
-from parser import read_board, read_components
+from parser import read_board, read_geometries
 
 
 def print_instruction():
@@ -17,6 +17,6 @@ components_lines = [line.rstrip('\n') for line in open(components_file)]
 board_file = sys.argv[2]
 board_lines = [line.rstrip('\n') for line in open(board_file)]
 
-components = read_components(components_lines)
-component_board = read_board(board_lines, components)
+component_geometries = read_geometries(components_lines)
+component_board = read_board(board_lines, component_geometries)
 print(component_board.to_json())
