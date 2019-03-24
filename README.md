@@ -1,8 +1,10 @@
-Usage:
+USAGE:
 
 python3 console_parser.py "EMP file" "EMN file" \> "resulting json file"
 
-Examples:
+
+EXAMPLES:
+
 python3 console_parser.py samples/bt121.emp samples/bt121.emn > res/bt121.json
 
 python3 console_parser.py samples/electricicmeter.emp samples/electricicmeter.emn > res/electricicmeter.json
